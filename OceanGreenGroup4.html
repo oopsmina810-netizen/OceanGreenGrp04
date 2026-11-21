@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biển Xanh - Trang chủ</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf7fb;
+    color: #245267;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #087e9b, #13b6c9);
+    padding: 22px 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #087e9b;
+}
+
+/* BANNER */
+.banner {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+
+    background:
+    linear-gradient(rgba(0, 83, 115, 0.55), rgba(0, 105, 140, 0.65)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h2 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.banner h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.banner button {
+    margin-top: 28px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #087e9b;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner button:hover {
+    background: #13b6c9;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* CONTENT */
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 25px;
+}
+
+/* INTRODUCTION */
+.intro {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 100, 130, 0.08);
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro h2,
+.section-title {
+    color: #087e9b;
+    border-left: 5px solid #13b6c9;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.intro b {
+    color: #087e9b;
+    line-height: 1.8;
+}
+
+.intro img {
+    width: 43%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* CARDS */
+.card-section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 100, 130, 0.08);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #eaf7fb;
+    padding: 28px 15px;
+    text-align: center;
+    border-radius: 14px;
+    border: 1px solid #d4edf3;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0, 120, 150, 0.15);
+}
+
+.card .icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: #087e9b;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background: #087e9b;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    line-height: 1.8;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 11px;
+    }
+
+    .banner {
+        min-height: 350px;
+    }
+
+    .banner h2 {
+        font-size: 40px;
+    }
+
+    .banner h3 {
+        font-size: 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .intro img {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-section {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏝️ BIỂN XANH</h1>
+
+    <nav>
+        <a href="OceanGreenGroup4.html">Trang chủ</a>
+        <a href="vaitro.html">Vai trò</a>
+        <a href="thuctrang.html">Thực trạng</a>
+        <a href="nguyennhan.html">Nguyên nhân</a>
+        <a href="hauqua.html">Hậu quả</a>
+        <a href="giaiphap.html">Giải pháp</a>
+        <a href="tuoitre.html">Tuổi trẻ</a>
+        <a href="thuvien.html">Thư viện</a>
+    </nav>
+</header>
+
+<!-- BANNER -->
+<div class="banner">
+    <h2>BIỂN XANH</h2>
+    <h3>Chung tay bảo vệ môi trường biển!</h3>
+    <p>Vì một đại dương sạch – Vì tương lai bền vững</p>
+
+    <button onclick="location.href='vaitro.html'">
+        Khám phá ngay →
+    </button>
+</div>
+
+<div class="content">
+
+    <!-- GIỚI THIỆU -->
+    <section class="intro">
+
+        <div class="intro-text">
+            <h2>🏝️ Về chúng tôi</h2>
+
+            <p>
+                Biển là món quà quý giá của thiên nhiên, cung cấp
+                nguồn tài nguyên phong phú, điều hòa khí hậu và là
+                nơi sinh sống của hàng triệu loài sinh vật.
+            </p>
+
+            <p>
+                Website Biển Xanh được tạo ra nhằm giúp mọi người
+                hiểu rõ hơn về vai trò của biển, thực trạng ô nhiễm
+                và những hành động thiết thực để bảo vệ đại dương.
+            </p>
+
+            <b>
+                Hãy cùng nhau lan tỏa thông điệp về một đại dương xanh!
+            </b>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5"
+            alt="Sinh vật biển"
+        >
+
+    </section>
+
+    <!-- NHỮNG GIÁ TRỊ CỦA BIỂN -->
+    <section class="card-section">
+
+        <h2 class="section-title">🌊 Đại dương xanh – Giá trị xanh</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🌊</div>
+                <h3>Biển đẹp</h3>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>Hệ sinh thái</h3>
+            </div>
+
+            <div class="card">
+                <div class="icon">🐟</div>
+                <h3>Đa dạng sinh học</h3>
+            </div>
+
+            <div class="card">
+                <div class="icon">👥</div>
+                <h3>Cùng hành động</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    <h3>🏝️ BIỂN XANH</h3>
+    <p>Chung tay vì một đại dương sạch và bền vững!</p>
+</footer>
+
+</body>
+</html>
+
